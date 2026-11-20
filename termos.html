@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="RotaAcessível: encontre, cadastre e avalie informações sobre acessibilidade em estabelecimentos." name="description"/>
+  <title>
+   Termos de Uso | RotaAcessível
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topbar">
+   <div class="topbar-inner">
+    <a class="logo" href="index.html">
+     ♿ RotaAcessível
+    </a>
+    <nav aria-label="Menu principal">
+     <a data-page="index.html" href="index.html">
+      Buscar
+     </a>
+     <a data-page="cadastro.html" href="cadastro.html">
+      Cadastrar Local
+     </a>
+     <a data-page="acessibilidade.html" href="acessibilidade.html">
+      Acessibilidade e Direitos
+     </a>
+     <a data-page="sobre.html" href="sobre.html">
+      Sobre o Projeto
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="page-intro">
+    <h1>
+     Termos de Uso
+    </h1>
+    <p>
+     Regras de participação na versão acadêmica do RotaAcessível.
+    </p>
+   </section>
+   <article class="caixa-branca prose">
+    <h2>
+     1. Objetivo
+    </h2>
+    <p>
+     O RotaAcessível é um protótipo acadêmico colaborativo voltado à divulgação de informações sobre recursos de acessibilidade em estabelecimentos.
+    </p>
+    <h2>
+     2. Informações cadastradas
+    </h2>
+    <p>
+     Cadastre somente informações que você considere verdadeiras e verificáveis. Não atribua recursos a um local sem confirmação.
+    </p>
+    <h2>
+     3. Fotos e comentários
+    </h2>
+    <p>
+     Publique apenas fotos que tenha direito de compartilhar. Não publique conteúdo ofensivo, discriminatório, enganoso ou que exponha dados pessoais de terceiros.
+    </p>
+    <h2>
+     4. Limitações
+    </h2>
+    <p>
+     As informações são fornecidas pelos usuários e não passam por auditoria técnica nesta versão. A presença de um recurso cadastrado não comprova atendimento às exigências legais ou às normas da ABNT.
+    </p>
+    <h2>
+     5. Funcionamento do protótipo
+    </h2>
+    <p>
+     Cadastros e avaliações ficam no navegador do usuário. Não há moderação automática, contas de usuário ou publicação pública em servidor nesta demonstração.
+    </p>
+    <h2>
+     6. Uso responsável
+    </h2>
+    <p>
+     Antes de visitar um estabelecimento, confirme diretamente com o responsável as condições de acessibilidade relevantes para suas necessidades.
+    </p>
+   </article>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <strong>
+      ♿ RotaAcessível
+     </strong>
+     <p>
+      Projeto acadêmico • UNITINS • TADS 2026.2 • ODS 10
+     </p>
+    </div>
+    <div class="footer-links">
+     <a href="sobre.html">
+      Sobre o Projeto
+     </a>
+     <a href="privacidade.html">
+      Política de Privacidade
+     </a>
+     <a href="termos.html">
+      Termos de Uso
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="app.js">
+  </script>
+  <script>
+   document.querySelectorAll('nav a[data-page]').forEach(a=>{if(location.pathname.split('/').pop()===a.dataset.page)a.classList.add('ativo')});
+  </script>
+ </body>
+</html>

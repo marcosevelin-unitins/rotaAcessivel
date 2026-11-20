@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="RotaAcessível: encontre, cadastre e avalie informações sobre acessibilidade em estabelecimentos." name="description"/>
+  <title>
+   Detalhes do local | RotaAcessível
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topbar">
+   <div class="topbar-inner">
+    <a class="logo" href="index.html">
+     ♿ RotaAcessível
+    </a>
+    <nav aria-label="Menu principal">
+     <a data-page="index.html" href="index.html">
+      Buscar
+     </a>
+     <a data-page="cadastro.html" href="cadastro.html">
+      Cadastrar Local
+     </a>
+     <a data-page="acessibilidade.html" href="acessibilidade.html">
+      Acessibilidade e Direitos
+     </a>
+     <a data-page="sobre.html" href="sobre.html">
+      Sobre o Projeto
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="page-intro">
+    <a class="back-link" href="index.html">
+     ← Voltar à busca
+    </a>
+    <h1>
+     Detalhes do estabelecimento
+    </h1>
+   </section>
+   <div class="duas-colunas">
+    <section class="caixa-branca">
+     <img alt="Foto do estabelecimento" class="detail-photo" hidden="" id="detalheFoto"/>
+     <h2 id="detalheNome">
+      Carregando...
+     </h2>
+     <p class="muted" id="detalheEndereco">
+     </p>
+     <p>
+      <strong>
+       Nota média:
+      </strong>
+      <span id="detalheNota">
+       Sem avaliações
+      </span>
+     </p>
+     <h3>
+      Recursos informados
+     </h3>
+     <ul class="lista-recursos" id="detalheRecursos">
+     </ul>
+     <h3>
+      Avaliações da comunidade
+     </h3>
+     <div id="listaComentarios">
+     </div>
+    </section>
+    <section class="caixa-branca">
+     <h2>
+      Envie sua avaliação
+     </h2>
+     <form id="formAvaliacao">
+      <div class="campo">
+       <label for="notaUsuario">
+        Sua nota
+       </label>
+       <select id="notaUsuario" required="">
+        <option value="5">
+         5 – Excelente
+        </option>
+        <option value="4">
+         4 – Bom
+        </option>
+        <option value="3">
+         3 – Regular
+        </option>
+        <option value="2">
+         2 – Ruim
+        </option>
+        <option value="1">
+         1 – Péssimo
+        </option>
+       </select>
+      </div>
+      <div class="campo">
+       <label for="comentarioUsuario">
+        Comentário (opcional)
+       </label>
+       <textarea id="comentarioUsuario" maxlength="600" placeholder="Conte sua experiência com a acessibilidade do local..." rows="5"></textarea>
+      </div>
+      <p class="notice">
+       Evite dados pessoais e comentários ofensivos. As avaliações são salvas apenas neste navegador.
+      </p>
+      <button type="submit">
+       Enviar avaliação
+      </button>
+     </form>
+    </section>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <strong>
+      ♿ RotaAcessível
+     </strong>
+     <p>
+      Projeto acadêmico • UNITINS • TADS 2026.2 • ODS 10
+     </p>
+    </div>
+    <div class="footer-links">
+     <a href="sobre.html">
+      Sobre o Projeto
+     </a>
+     <a href="privacidade.html">
+      Política de Privacidade
+     </a>
+     <a href="termos.html">
+      Termos de Uso
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="app.js">
+  </script>
+  <script>
+   document.querySelectorAll('nav a[data-page]').forEach(a=>{if(location.pathname.split('/').pop()===a.dataset.page)a.classList.add('ativo')});
+  </script>
+ </body>
+</html>

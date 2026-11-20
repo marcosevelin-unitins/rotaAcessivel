@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="RotaAcessível: encontre, cadastre e avalie informações sobre acessibilidade em estabelecimentos." name="description"/>
+  <title>
+   Cadastrar local | RotaAcessível
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topbar">
+   <div class="topbar-inner">
+    <a class="logo" href="index.html">
+     ♿ RotaAcessível
+    </a>
+    <nav aria-label="Menu principal">
+     <a data-page="index.html" href="index.html">
+      Buscar
+     </a>
+     <a data-page="cadastro.html" href="cadastro.html">
+      Cadastrar Local
+     </a>
+     <a data-page="acessibilidade.html" href="acessibilidade.html">
+      Acessibilidade e Direitos
+     </a>
+     <a data-page="sobre.html" href="sobre.html">
+      Sobre o Projeto
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="page-intro">
+    <span class="eyebrow">
+     Participe da comunidade
+    </span>
+    <h1>
+     Cadastrar novo estabelecimento
+    </h1>
+    <p>
+     Compartilhe informações sobre os recursos de acessibilidade de um local.
+    </p>
+   </section>
+   <div class="caixa-branca form-centralizado">
+    <form id="formCadastro">
+     <div class="campo">
+      <label for="nomeLocal">
+       Nome do estabelecimento
+      </label>
+      <input id="nomeLocal" maxlength="100" placeholder="Ex.: Panificadora Central" required="" type="text"/>
+     </div>
+     <div class="campo">
+      <label for="categoriaLocal">
+       Categoria
+      </label>
+      <select id="categoriaLocal" required="">
+       <option value="Restaurante">
+        Restaurante / Panificadora
+       </option>
+       <option value="Supermercado">
+        Supermercado / Comércio
+       </option>
+       <option value="Prédio Público">
+        Prédio Público / Saúde
+       </option>
+       <option value="Loja">
+        Loja
+       </option>
+       <option value="Outro">
+        Outro
+       </option>
+      </select>
+     </div>
+     <div class="campo">
+      <label for="enderecoLocal">
+       Endereço completo
+      </label>
+      <input id="enderecoLocal" maxlength="180" placeholder="Rua, bairro, Xambioá – TO" required="" type="text"/>
+     </div>
+     <div class="campo">
+      <label for="fotoLocal">
+       Foto do local (opcional)
+      </label>
+      <input accept="image/png,image/jpeg,image/webp" id="fotoLocal" type="file"/>
+      <small>
+       Envie apenas fotos que você tem autorização para compartilhar.
+      </small>
+      <div hidden="" id="previewContainer">
+       <img alt="Prévia da foto selecionada" id="previewFoto"/>
+      </div>
+     </div>
+     <fieldset class="campo">
+      <legend>
+       Recursos de acessibilidade observados
+      </legend>
+      <div class="grupo-checkbox">
+       <label>
+        <input name="recurso" type="checkbox" value="rampa"/>
+        Rampa de acesso
+       </label>
+       <label>
+        <input name="recurso" type="checkbox" value="banheiro"/>
+        Banheiro adaptado
+       </label>
+       <label>
+        <input name="recurso" type="checkbox" value="vaga"/>
+        Vaga reservada
+       </label>
+       <label>
+        <input name="recurso" type="checkbox" value="sem-degraus"/>
+        Entrada sem degraus
+       </label>
+      </div>
+     </fieldset>
+     <p class="notice">
+      Marcar um recurso não significa certificar conformidade com normas técnicas.
+     </p>
+     <div class="actions">
+      <button type="submit">
+       Cadastrar local
+      </button>
+      <a class="btn btn-secundario" href="index.html">
+       Cancelar
+      </a>
+     </div>
+    </form>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <strong>
+      ♿ RotaAcessível
+     </strong>
+     <p>
+      Projeto acadêmico • UNITINS • TADS 2026.2 • ODS 10
+     </p>
+    </div>
+    <div class="footer-links">
+     <a href="sobre.html">
+      Sobre o Projeto
+     </a>
+     <a href="privacidade.html">
+      Política de Privacidade
+     </a>
+     <a href="termos.html">
+      Termos de Uso
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="app.js">
+  </script>
+  <script>
+   document.querySelectorAll('nav a[data-page]').forEach(a=>{if(location.pathname.split('/').pop()===a.dataset.page)a.classList.add('ativo')});
+  </script>
+ </body>
+</html>

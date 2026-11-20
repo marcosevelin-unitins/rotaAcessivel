@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="RotaAcessível: encontre, cadastre e avalie informações sobre acessibilidade em estabelecimentos." name="description"/>
+  <title>
+   Sobre o projeto | RotaAcessível
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topbar">
+   <div class="topbar-inner">
+    <a class="logo" href="index.html">
+     ♿ RotaAcessível
+    </a>
+    <nav aria-label="Menu principal">
+     <a data-page="index.html" href="index.html">
+      Buscar
+     </a>
+     <a data-page="cadastro.html" href="cadastro.html">
+      Cadastrar Local
+     </a>
+     <a data-page="acessibilidade.html" href="acessibilidade.html">
+      Acessibilidade e Direitos
+     </a>
+     <a data-page="sobre.html" href="sobre.html">
+      Sobre o Projeto
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="page-intro">
+    <span class="eyebrow">
+     Conheça nossa iniciativa
+    </span>
+    <h1>
+     Sobre o RotaAcessível
+    </h1>
+    <p>
+     Uma proposta acadêmica para aproximar pessoas de informações úteis sobre acessibilidade.
+    </p>
+   </section>
+   <div class="info-grid">
+    <article class="info-card">
+     <div class="info-icon">
+      💡
+     </div>
+     <div>
+      <h2>
+       Como surgiu
+      </h2>
+      <p>
+       O RotaAcessível foi desenvolvido como estudo de caso do Seminário Tech 2026.2, do curso de Tecnologia em Análise e Desenvolvimento de Sistemas da Universidade Estadual do Tocantins (UNITINS).
+      </p>
+     </div>
+    </article>
+    <article class="info-card">
+     <div class="info-icon">
+      🎯
+     </div>
+     <div>
+      <h2>
+       Nosso objetivo
+      </h2>
+      <p>
+       Permitir que a comunidade consulte, cadastre e avalie informações sobre estabelecimentos e seus recursos de acessibilidade, contribuindo para a redução de barreiras informacionais.
+      </p>
+     </div>
+    </article>
+    <article class="info-card wide equipe-card">
+     <div class="info-icon" aria-hidden="true">👥</div>
+     <div class="equipe-conteudo">
+      <h2>Equipe criadora</h2>
+      <p class="equipe-descricao">Projeto desenvolvido por estudantes da Universidade Estadual do Tocantins.</p>
+      <div class="equipe-dados">
+       <div><strong>Instituição</strong><span>UNITINS</span></div>
+       <div><strong>Curso</strong><span>TADS</span></div>
+       <div><strong>Turma</strong><span>2º período</span></div>
+       <div><strong>Semestre</strong><span>2026.2</span></div>
+      </div>
+      <h3 class="equipe-subtitulo">Integrantes do grupo</h3>
+      <ul class="equipe-lista">
+       <li>João Paulo Ferreira Silva</li>
+       <li>Mauro Neto Rodrigues Ferreira Araujo</li>
+       <li>Marcos Aurélio Evelin de Carvalho Júnior</li>
+      </ul>
+     </div>
+    </article>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <strong>
+      ♿ RotaAcessível
+     </strong>
+     <p>
+      Projeto acadêmico • UNITINS • TADS 2026.2 • ODS 10
+     </p>
+    </div>
+    <div class="footer-links">
+     <a href="sobre.html">
+      Sobre o Projeto
+     </a>
+     <a href="privacidade.html">
+      Política de Privacidade
+     </a>
+     <a href="termos.html">
+      Termos de Uso
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="app.js">
+  </script>
+  <script>
+   document.querySelectorAll('nav a[data-page]').forEach(a=>{if(location.pathname.split('/').pop()===a.dataset.page)a.classList.add('ativo')});
+  </script>
+ </body>
+</html>

@@ -1,0 +1,24 @@
+ROTAACESSÍVEL — PROJETO ACADÊMICO UNITINS TADS 2026.2
+
+COMO ABRIR
+1. Extraia todos os arquivos do ZIP para a mesma pasta.
+2. Abra index.html no navegador (Chrome, Edge ou Firefox).
+3. Navegue pelo menu superior.
+
+PÁGINAS
+index.html — buscar e filtrar estabelecimentos
+cadastro.html — cadastrar local e foto
+detalhe.html — ver local e enviar avaliações
+acessibilidade.html — leis, normas e ODS 10
+sobre.html — objetivo e créditos do projeto
+privacidade.html — política de privacidade da versão demonstrativa
+termos.html — termos de uso da versão demonstrativa
+
+IMPORTANTE
+- Dados e avaliações são salvos apenas no navegador (localStorage).
+- A lista começa vazia. Cadastre os estabelecimentos pela página Cadastrar Local.
+- Para excluir um local, clique no X preto do cartão e confirme.
+- Locais de exemplo de versões anteriores são removidos automaticamente.
+- A versão não possui contas, servidor ou moderação.
+- Em sobre.html, substitua o texto de integrantes pelos nomes do grupo.
+- Antes de publicar em produção, valide informações, direitos de imagens, acessibilidade técnica e documentos legais.

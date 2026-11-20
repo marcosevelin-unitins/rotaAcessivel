@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="RotaAcessível: encontre, cadastre e avalie informações sobre acessibilidade em estabelecimentos." name="description"/>
+  <title>
+   Política de Privacidade | RotaAcessível
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topbar">
+   <div class="topbar-inner">
+    <a class="logo" href="index.html">
+     ♿ RotaAcessível
+    </a>
+    <nav aria-label="Menu principal">
+     <a data-page="index.html" href="index.html">
+      Buscar
+     </a>
+     <a data-page="cadastro.html" href="cadastro.html">
+      Cadastrar Local
+     </a>
+     <a data-page="acessibilidade.html" href="acessibilidade.html">
+      Acessibilidade e Direitos
+     </a>
+     <a data-page="sobre.html" href="sobre.html">
+      Sobre o Projeto
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="page-intro">
+    <h1>
+     Política de Privacidade
+    </h1>
+    <p>
+     Como os dados são tratados nesta versão demonstrativa do RotaAcessível.
+    </p>
+   </section>
+   <article class="caixa-branca prose">
+    <h2>
+     1. Finalidade
+    </h2>
+    <p>
+     O projeto permite pesquisar, cadastrar e avaliar estabelecimentos quanto aos recursos de acessibilidade informados pelos usuários.
+    </p>
+    <h2>
+     2. Dados tratados
+    </h2>
+    <p>
+     Ao cadastrar um local, são registrados nome, categoria, endereço, recursos de acessibilidade e foto opcional. Ao avaliar, são registrados nota e comentário opcional. Esta versão não solicita cadastro de conta ou identificação pessoal.
+    </p>
+    <h2>
+     3. Armazenamento
+    </h2>
+    <p>
+     Os dados cadastrados e as avaliações são armazenados no
+     <strong>
+      localStorage do navegador
+     </strong>
+     usado para acessar o site. Não há servidor, banco de dados remoto nem sincronização entre dispositivos nesta demonstração.
+    </p>
+    <h2>
+     4. Compartilhamento e cuidados
+    </h2>
+    <p>
+     Não envie fotos ou comentários com informações pessoais de terceiros sem autorização. Os dados aparecem apenas para quem usa o mesmo armazenamento local do navegador.
+    </p>
+    <h2>
+     5. Controle dos dados
+    </h2>
+    <p>
+     O usuário pode remover os dados locais limpando o armazenamento do site nas configurações do navegador. Isso também apaga cadastros e avaliações feitos nesta instalação.
+    </p>
+    <h2>
+     6. Natureza do projeto
+    </h2>
+    <p>
+     Esta política descreve o protótipo acadêmico atual. Antes de publicar o sistema em produção, será necessário revisar os fluxos de dados, os responsáveis pelo tratamento e os canais de atendimento conforme a LGPD (Lei nº 13.709/2018).
+    </p>
+   </article>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <strong>
+      ♿ RotaAcessível
+     </strong>
+     <p>
+      Projeto acadêmico • UNITINS • TADS 2026.2 • ODS 10
+     </p>
+    </div>
+    <div class="footer-links">
+     <a href="sobre.html">
+      Sobre o Projeto
+     </a>
+     <a href="privacidade.html">
+      Política de Privacidade
+     </a>
+     <a href="termos.html">
+      Termos de Uso
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="app.js">
+  </script>
+  <script>
+   document.querySelectorAll('nav a[data-page]').forEach(a=>{if(location.pathname.split('/').pop()===a.dataset.page)a.classList.add('ativo')});
+  </script>
+ </body>
+</html>

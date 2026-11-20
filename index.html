@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="RotaAcessível: encontre, cadastre e avalie informações sobre acessibilidade em estabelecimentos." name="description"/>
+  <title>
+   Buscar locais | RotaAcessível
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topbar">
+   <div class="topbar-inner">
+    <a class="logo" href="index.html">
+     ♿ RotaAcessível
+    </a>
+    <nav aria-label="Menu principal">
+     <a data-page="index.html" href="index.html">
+      Buscar
+     </a>
+     <a data-page="cadastro.html" href="cadastro.html">
+      Cadastrar Local
+     </a>
+     <a data-page="acessibilidade.html" href="acessibilidade.html">
+      Acessibilidade e Direitos
+     </a>
+     <a data-page="sobre.html" href="sobre.html">
+      Sobre o Projeto
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="hero hero-home">
+    <span class="eyebrow">
+     ♿ Inclusão e autonomia
+    </span>
+    <h1>
+     Encontre e compartilhe locais acessíveis em Xambioá
+    </h1>
+    <p>
+     Consulte estabelecimentos, conheça recursos de acessibilidade e contribua com informações para a comunidade.
+    </p>
+    <div class="barra-busca">
+     <label class="sr-only" for="campoBusca">
+      Buscar estabelecimentos
+     </label>
+     <input id="campoBusca" placeholder="Digite o nome ou categoria do local..." type="search"/>
+     <button onclick="filtrarLocais()" type="button">
+      Buscar
+     </button>
+    </div>
+    <div aria-label="Filtrar recursos" class="filtros">
+     <label class="filtro-item">
+      <input onchange="filtrarLocais()" type="checkbox" value="rampa"/>
+      Rampa de acesso
+     </label>
+     <label class="filtro-item">
+      <input onchange="filtrarLocais()" type="checkbox" value="banheiro"/>
+      Banheiro adaptado
+     </label>
+     <label class="filtro-item">
+      <input onchange="filtrarLocais()" type="checkbox" value="vaga"/>
+      Vaga reservada
+     </label>
+     <label class="filtro-item">
+      <input onchange="filtrarLocais()" type="checkbox" value="sem-degraus"/>
+      Entrada sem degraus
+     </label>
+    </div>
+   </section>
+   <section class="section">
+    <div class="section-head">
+     <div>
+      <span class="eyebrow">
+       Explore a cidade
+      </span>
+      <h2>
+       Estabelecimentos em Xambioá – TO
+      </h2>
+     </div>
+     <a class="btn btn-outline" href="cadastro.html">
+      + Cadastrar local
+     </a>
+    </div>
+    <div aria-live="polite" class="grid-cards" id="listaEstabelecimentos">
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <strong>
+      ♿ RotaAcessível
+     </strong>
+     <p>
+      Projeto acadêmico • UNITINS • TADS 2026.2 • ODS 10
+     </p>
+    </div>
+    <div class="footer-links">
+     <a href="sobre.html">
+      Sobre o Projeto
+     </a>
+     <a href="privacidade.html">
+      Política de Privacidade
+     </a>
+     <a href="termos.html">
+      Termos de Uso
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="app.js">
+  </script>
+  <script>
+   document.querySelectorAll('nav a[data-page]').forEach(a=>{if(location.pathname.split('/').pop()===a.dataset.page)a.classList.add('ativo')});
+  </script>
+ </body>
+</html>

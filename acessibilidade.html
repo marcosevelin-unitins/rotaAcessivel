@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="RotaAcessível: encontre, cadastre e avalie informações sobre acessibilidade em estabelecimentos." name="description"/>
+  <title>
+   Acessibilidade e Direitos | RotaAcessível
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topbar">
+   <div class="topbar-inner">
+    <a class="logo" href="index.html">
+     ♿ RotaAcessível
+    </a>
+    <nav aria-label="Menu principal">
+     <a data-page="index.html" href="index.html">
+      Buscar
+     </a>
+     <a data-page="cadastro.html" href="cadastro.html">
+      Cadastrar Local
+     </a>
+     <a data-page="acessibilidade.html" href="acessibilidade.html">
+      Acessibilidade e Direitos
+     </a>
+     <a data-page="sobre.html" href="sobre.html">
+      Sobre o Projeto
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="hero hero-rights">
+    <span class="eyebrow light">
+     Conhecimento que inclui
+    </span>
+    <h1>
+     Acessibilidade e Direitos
+    </h1>
+    <p>
+     Conheça leis, normas e informações importantes sobre acessibilidade e inclusão.
+    </p>
+   </section>
+   <section class="info-grid">
+    <article class="info-card">
+     <div class="info-icon">
+      ♿
+     </div>
+     <div>
+      <h2>
+       O que é acessibilidade?
+      </h2>
+      <p>
+       É a possibilidade de utilizar espaços, serviços, transportes, informações e tecnologias com segurança e autonomia, inclusive por pessoas com deficiência ou mobilidade reduzida.
+      </p>
+     </div>
+    </article>
+    <article class="info-card">
+     <div class="info-icon">
+      ⚖️
+     </div>
+     <div>
+      <h2>
+       Leis e direitos
+      </h2>
+      <p>
+       O Brasil possui normas legais que promovem a acessibilidade e a inclusão:
+      </p>
+      <ul>
+       <li>
+        <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" rel="noopener noreferrer" target="_blank">
+         Lei nº 13.146/2015
+        </a>
+        — Lei Brasileira de Inclusão.
+       </li>
+       <li>
+        <a href="https://www.planalto.gov.br/ccivil_03/leis/l10098.htm" rel="noopener noreferrer" target="_blank">
+         Lei nº 10.098/2000
+        </a>
+        — normas gerais de acessibilidade.
+       </li>
+       <li>
+        <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/decreto/d5296.htm" rel="noopener noreferrer" target="_blank">
+         Decreto nº 5.296/2004
+        </a>
+        — regulamentação de normas de acessibilidade.
+       </li>
+      </ul>
+     </div>
+    </article>
+    <article class="info-card">
+     <div class="info-icon">
+      📐
+     </div>
+     <div>
+      <h2>
+       Normas e padrões
+      </h2>
+      <p>
+       A
+       <strong>
+        ABNT NBR 9050
+       </strong>
+       apresenta critérios técnicos para acessibilidade em edificações, mobiliário, espaços e equipamentos urbanos. Entre os temas estão:
+      </p>
+      <ul>
+       <li>
+        Rampas e rotas acessíveis
+       </li>
+       <li>
+        Áreas de circulação
+       </li>
+       <li>
+        Sanitários acessíveis
+       </li>
+       <li>
+        Sinalização e orientação
+       </li>
+      </ul>
+      <p class="muted">
+       A verificação de conformidade exige consultar a edição aplicável da norma e avaliar o local.
+      </p>
+     </div>
+    </article>
+    <article class="info-card">
+     <div class="info-icon">
+      🌎
+     </div>
+     <div>
+      <h2>
+       ODS 10 — Redução das Desigualdades
+      </h2>
+      <p>
+       O RotaAcessível se relaciona ao Objetivo de Desenvolvimento Sustentável 10, ao facilitar o compartilhamento de informações sobre estabelecimentos e apoiar a inclusão e a autonomia das pessoas.
+      </p>
+      <a href="https://brasil.un.org/pt-br/sdgs/10" rel="noopener noreferrer" target="_blank">
+       Conheça o ODS 10
+      </a>
+     </div>
+    </article>
+   </section>
+   <p class="notice">
+    Conteúdo educativo. As informações do site não substituem orientação técnica ou jurídica e não constituem certificação de acessibilidade.
+   </p>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <strong>
+      ♿ RotaAcessível
+     </strong>
+     <p>
+      Projeto acadêmico • UNITINS • TADS 2026.2 • ODS 10
+     </p>
+    </div>
+    <div class="footer-links">
+     <a href="sobre.html">
+      Sobre o Projeto
+     </a>
+     <a href="privacidade.html">
+      Política de Privacidade
+     </a>
+     <a href="termos.html">
+      Termos de Uso
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="app.js">
+  </script>
+  <script>
+   document.querySelectorAll('nav a[data-page]').forEach(a=>{if(location.pathname.split('/').pop()===a.dataset.page)a.classList.add('ativo')});
+  </script>
+ </body>
+</html>
